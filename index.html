@@ -1,0 +1,571 @@
+<!--
+
+	Template Name: AKAFÖ
+	Template URI: http://newsletter.akafoe.de
+	Description: Basis-Layout für AKAFÖ-Newsletter</a>
+	Author: Dennis Fischer
+	Author URI: https://github.com/ichderfisch
+	Version: 1.0
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>{subject}</title>
+</head>
+<body>
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+	#outlook a{padding:0;}
+	body{font-family: "Montserrat",Arial,sans-serif; width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0;}
+	.ExternalClass{width:100%;}
+	.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{line-height:100%;}
+	.bodytbl{margin:0;padding:0;width:100% !important;}
+	img{outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;display:block;max-width:100%;}
+	a img{border:none;}
+	p{margin:1em 0;}
+	
+	table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;}
+	table td{border-collapse:collapse;}
+	.o-fix table,.o-fix td{mso-table-lspace:0pt;mso-table-rspace:0pt;}
+	
+	body{background-color: #009cde/*Hintergrund & Links*/;}
+	table{font-family:"Montserrat",Helvetica,Arial,sans-serif;color:#585858;}
+	td,p{font-size:14px;line-height:20px;color:#000/*Text*/;}
+	td,tr{padding:0;}
+	ul,ol{margin-top:24px;margin-bottom:24px;}
+	li{line-height:24px;}
+	
+	a{color:#009cde/*Links*/;text-decoration:none;padding:2px 0px;}
+	a:link, a:visited{color:#009cde;}
+	a:hover{color:#009cde;text-decoration: underline;}
+	
+	.h1{font-family:"Montserrat",Arial,sans-serif;font-size:26px;font-weight: bold; letter-spacing:-1px;margin-bottom:16px;margin-top:2px;line-height:30px;}
+	.h2{font-family:"Montserrat",Arial,sans-serif;font-size:20px;letter-spacing:0;margin-top:2px;line-height:30px;}
+	h1,h2,h3,h4,h5,h6{font-family:"Montserrat",Helvetica,Arial,sans-serif;font-weight:normal;}
+	h1{font-size:20px;letter-spacing:-1px;margin-bottom:16px;margin-top:4px;line-height:24px;}
+	h2{font-size:18px;margin-bottom:12px;margin-top:2px;line-height:24px;}
+	h3{font-size:14px;margin-bottom:12px;margin-top:2px;line-height:24px;}
+	h4{font-size:14px;font-weight:bold;}
+	h5{font-size:12px;}
+	h6{font-size:12px;font-weight:bold;}
+	h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#009cde;}
+	h1 a:active,h2 a:active,h3 a:active,h4 a:active,h5 a:active,h6 a:active{color:#009cde !important;}
+	h1 a:visited,h2 a:visited,h3 a:visited,h4 a:visited,h5 a:visited,h6 a:visited{color:#009cde !important;}
+	
+	.wrap.header{border-top:1px solid #FEFEFE/*Rahmenfarbe*/; background-color:#fff}
+	.wrap.footer{border-bottom:1px solid #FEFEFE;}
+	.wrap.body,.wrap.footer{background-color:#FFFFFF/*Email-Hintergrund*/;border-right:1px solid #FEFEFE;border-left:1px solid #FEFEFE;}
+	.padd{width:24px;}
+	
+	.small{font-size:11px;line-height:18px;}
+	.separator{border-top:1px dotted #E1E1E1/*Separator*/;}
+	.btn{margin-top:10px;display:block;}
+	.btn img{display:inline;}
+	.subline{line-height:18px;font-size:16px;letter-spacing:-1px;}
+	
+	.footer a {color: #000/*Links Footer*/ }
+	
+	table.textbutton td{background:#efefef/*Text Button Hintergrund*/;padding:1px 14px 4px 14px;color:#585858;display:block;height:22px;border:1px solid #FEFEFE;vertical-align:top;}
+	table.textbutton a{color:#585858;font-size:13px;font-weight:normal;line-height:22px;width:100%;display:inline-block;}
+
+	div.preheader{line-height:0px;font-size:0px;height:0px;display:none !important;display:none;visibility:hidden;}
+	
+
+	
+	@media only screen and (max-device-width: 480px) {
+		body{-webkit-text-size-adjust:120% !important;-ms-text-size-adjust:120% !important;}
+		table[class=bodytbl] .subline{float:left;}
+		table[class=bodytbl] .padd{width:12px !important;}
+		table[class=bodytbl] .wrap{width:470px !important;}
+		table[class=bodytbl] .wrap table{width:100% !important;}
+		table[class=bodytbl] .wrap img{max-width:100% !important;height:auto !important;}
+		table[class=bodytbl] .wrap .m-100{width:100% !important;}
+		table[class=bodytbl] .m-0{width:0;display:none;}
+		table[class=bodytbl] .m-b{display:block;width:100% !important;}
+		table[class=bodytbl] .m-b-b{margin-bottom:24px !important;}
+		table[class=bodytbl] .m-1-2{max-width:264px !important;}
+		table[class=bodytbl] .m-1-3{max-width:168px !important;}
+		table[class=bodytbl] .m-1-4{max-width:120px !important;}
+		table[class=bodytbl] .m-1-2 img{max-width:264px !important;}
+		table[class=bodytbl] .m-1-3 img{max-width:168px !important;}
+		table[class=bodytbl] .m-1-4 img{max-width:120px !important;}
+	}
+	
+	@media only screen and (max-device-width: 320px) {
+		table[class=bodytbl] .wrap{width:310px !important;}
+	}
+	
+</style>
+<table class="bodytbl" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+	<td background="" align="center">
+		
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap">
+		<tr>
+			<td height="0" align="center" valign="middle">
+				<div class="preheader">{preheader}</div></div>
+			</td>
+		</tr>
+		</table>
+			
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap header">
+		<tr><td height="24" colspan="3"></td></tr>
+		<tr>
+			<td width="24" class="padd">&nbsp;</td>
+			<td valign="top" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0" class="o-fix">
+				<tr>
+                    <td class="small m-b" align="left" valign="middle">
+                        <img src="img/logo.png" alt="" title="" width="200" height="60" border="0" editable label="Logo" />
+                    </td>
+				</tr>
+				</table>
+			</td>
+			<td width="24" class="padd">&nbsp;</td>
+		</tr>
+		<tr><td height="24" colspan="3"></td></tr>
+		</table>
+
+		
+<modules>
+
+	<module active label="Intro">
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+		<tr>
+			<td valign="top" align="center">
+				<img src="img/ph/ph_598.png" class="m-100" alt="" title="" width="598" height="336" border="0" editable label="Image max width 598 pixel" />
+			</td>
+		</tr>
+		</table>
+		
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+		<tr><td height="12" colspan="3"></td></tr>
+		<tr>
+			<td width="24" class="padd">&nbsp;</td>
+			<td valign="top" align="left">
+				<h1 class="h1"><single label="Headline">Lorem ipsum dolor sit amet consetetur!</single></h1>
+				<h2 class="h2"><single label="Intro Sentence">Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam </single></h2>
+			</td>
+			<td width="24" class="padd">&nbsp;</td>
+		</tr>
+		<tr><td height="12" colspan="3"></td></tr>
+		</table>
+	</module>
+
+	<module label="Image on the Left" auto>
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+		<tr><td height="12"></td></tr>
+		<tr>
+			<td valign="top" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="24" class="padd">&nbsp;</td>
+					<td valign="top">
+		
+					<table width="264" cellspacing="0" cellpadding="0" align="left" class="m-b m-b-b">
+							<tr>
+					<td valign="top" align="left" class="m-1-2">
+						<img src="img/ph/ph_264.png" alt="" title="" width="264" height="264" border="0" editable label="Image max width 264 pixel" />
+					</td>
+							</tr>
+						</table>
+					<table width="264" cellspacing="0" cellpadding="0" align="right">
+							<tr>
+					<td width="264" valign="top" align="left">
+						<h1><single label="Headline">Hier der Titel</single></h1>
+						<multi label="Body"><p>
+							 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun.
+						</p></multi>
+						<div class="btn"><buttons>
+							<a href="#" editable label="Read More Button"><img src="img/btn/weiterlesen.png" width="145" height="40" alt="Weiterlesen" title="Weiterlesen" border="0" /></a>
+						</buttons></div>
+					</td>
+						</tr>
+					</table>
+					</td>
+		
+					<td width="24" class="padd">&nbsp;</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr><td height="12"></td></tr>
+		</table>
+		
+        <table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+			<tr><td height="12" colspan="3"></td></tr>
+			<tr><td width="24" class="padd">&nbsp;</td>
+			<td align="center"><table width="100%" cellpadding="0" cellspacing="0" class="separator"><tr><td height="23">&nbsp;</td></tr></table></td>
+			<td width="24" class="padd">&nbsp;</td>
+			</tr>
+		</table>
+	</module>
+
+	<module label="Image on the Right" auto>
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+		<tr><td height="12"></td></tr>
+		<tr>
+			<td valign="top" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="24" class="padd">&nbsp;</td>
+					<td valign="top">
+		
+					<table width="264" cellspacing="0" cellpadding="0" align="right" class="m-b m-b-b">
+							<tr>
+                    <td valign="top" align="left" class="m-1-2">
+                        <img src="img/ph/ph_264.png" alt="" title="" width="264" height="264" border="0" editable label="Image max width 264 pixel" />
+                    </td>
+							</tr>
+					</table>
+					<table width="264" cellspacing="0" cellpadding="0" align="left">
+							<tr>
+					<td valign="top" align="left">
+						<h1><single label="Headline">Hier der Titel</single></h1>
+						<multi label="Body"><p>
+							 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun.
+						</p></multi>
+						<div class="btn"><buttons>
+							<a href="#" editable label="Read More Button"><img src="img/btn/weiterlesen.png" width="145" height="40" alt="Weiterlesen" title="Weiterlesen" border="0" /></a>
+						</buttons></div>
+					</td>
+						</tr>
+					</table>
+					</td>
+		
+					<td width="24" class="padd">&nbsp;</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr><td height="12"></td></tr>
+		</table>
+
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+			<tr><td height="12" colspan="3"></td></tr>
+			<tr><td width="24" class="padd">&nbsp;</td>
+			<td align="center"><table width="100%" cellpadding="0" cellspacing="0" class="separator"><tr><td height="23">&nbsp;</td></tr></table></td>
+			<td width="24" class="padd">&nbsp;</td>
+			</tr>
+		</table>
+
+	</module>
+
+
+	<module label="1/3 Image on the Left" auto>
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+		<tr><td height="12"></td></tr>
+		<tr>
+			<td valign="top" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="24" class="padd">&nbsp;</td>
+					<td valign="top">
+		
+					<table width="168" cellspacing="0" cellpadding="0" align="left" class="m-b m-b-b">
+							<tr>
+					<td valign="top" align="left" class="m-1-3">
+						<img src="img/ph/ph_168.png" alt="" title="" width="168" height="224" border="0" editable label="Image max width 168 pixel" />
+					</td>
+							</tr>
+					</table>
+					<table width="360" cellspacing="0" cellpadding="0" align="right">
+							<tr>
+					<td valign="top" align="left">
+						<h1><single label="Headline">Hier der Titel</single></h1>
+						<multi label="Body"><p>
+							 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+						</p></multi>
+						<div class="btn"><buttons>
+							<a href="#" editable label="Read More Button"><img src="img/btn/weiterlesen.png" width="145" height="40" alt="Weiterlesen" title="Weiterlesen" border="0" /></a>
+						</buttons></div>
+					</td>
+						</tr>
+					</table>
+					</td>
+		
+					<td width="24" class="padd">&nbsp;</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr><td height="12"></td></tr>
+		</table>
+
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+			<tr><td height="12" colspan="3"></td></tr>
+			<tr><td width="24" class="padd">&nbsp;</td>
+			<td align="center"><table width="100%" cellpadding="0" cellspacing="0" class="separator"><tr><td height="23">&nbsp;</td></tr></table></td>
+			<td width="24" class="padd">&nbsp;</td>
+			</tr>
+		</table>
+
+	</module>
+
+
+	<module label="1/3 Image on the Right" auto>
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+		<tr><td height="12"></td></tr>
+		<tr>
+			<td valign="top" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="24" class="padd">&nbsp;</td>
+					<td valign="top">
+		
+					<table width="168" cellspacing="0" cellpadding="0" align="right" class="m-b m-b-b">
+							<tr>
+					<td valign="top" align="left">
+						<img src="img/ph/ph_168.png" alt="" title="" width="168" height="224" border="0" editable label="Image max width 168 pixel" />
+					</td>
+							</tr>
+					</table>
+					<table width="360" cellspacing="0" cellpadding="0" align="left">
+							<tr>
+					<td valign="top" align="left">
+						<h1><single label="Headline">Hier der Titel</single></h1>
+						<multi label="Body"><p>
+							 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+						</p></multi>
+						<div class="btn"><buttons>
+							<a href="#" editable label="Read More Button"><img src="img/btn/weiterlesen.png" width="145" height="40" alt="Weiterlesen" title="Weiterlesen" border="0" /></a>
+						</buttons></div>
+					</td>
+						</tr>
+					</table>
+					</td>
+		
+					<td width="24" class="padd">&nbsp;</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr><td height="12"></td></tr>
+		</table>
+
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+			<tr><td height="12" colspan="3"></td></tr>
+			<tr><td width="24" class="padd">&nbsp;</td>
+			<td align="center"><table width="100%" cellpadding="0" cellspacing="0" class="separator"><tr><td height="23">&nbsp;</td></tr></table></td>
+			<td width="24" class="padd">&nbsp;</td>
+			</tr>
+		</table>
+		
+	</module>
+
+
+	<module label="1/1 Column" auto>
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+		<tr><td height="12" colspan="3"></td></tr>
+		<tr>
+			<td width="24" class="padd">&nbsp;</td>
+			<td valign="top" align="left">
+		
+						<h1><single label="Headline">Hier der Titel</single></h1>
+						<multi label="Body"><p>
+							 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+						</p></multi>
+						<div class="btn"><buttons>
+							<a href="#" editable label="Read More Button"><img src="img/btn/weiterlesen.png" width="145" height="40" alt="Weiterlesen" title="Weiterlesen" border="0" /></a>
+						</buttons></div>
+		
+			</td>
+			<td width="24" class="padd">&nbsp;</td>
+		</tr>
+		<tr><td height="12" colspan="3"></td></tr>
+		</table>
+
+
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+			<tr><td height="12" colspan="3"></td></tr>
+			<tr><td width="24" class="padd">&nbsp;</td>
+			<td align="center"><table width="100%" cellpadding="0" cellspacing="0" class="separator"><tr><td height="23">&nbsp;</td></tr></table></td>
+			<td width="24" class="padd">&nbsp;</td>
+			</tr>
+		</table>
+		
+		
+	</module>
+
+
+	<module label="2 Spalten mit Bild" auto>
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+		<tr><td height="12" colspan="3"></td></tr>
+		<tr>
+			<td width="24" class="padd">&nbsp;</td>
+			<td valign="top" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0" class="o-fix">
+				<tr>
+		
+					<td valign="top" align="left">
+						<table width="264" cellpadding="0" cellspacing="0" class="m-b m-b-b" align="left">
+						<tr>
+							<td valign="top" align="left">
+							<h1><single label="Headline">Hier der Titel</single></h1>
+				            <img src="img/ph/ph_264_198.png" alt="" title="" width="264" height="198" border="0" editable label="Image max width 264 pixel" />
+
+							<multi label="Body"><p>
+								 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+							</p></multi>
+						<div class="btn"><buttons>
+							<a href="#" editable label="Read More Button"><img src="img/btn/weiterlesen.png" width="145" height="40" alt="Weiterlesen" title="Weiterlesen" border="0" /></a>
+						</buttons></div>
+							</td>
+						</tr>
+						</table>
+						<table width="264" cellpadding="0" cellspacing="0" class="m-b" align="right">
+						<tr>
+							<td valign="top" align="left">
+							<h1><single label="Headline">Hier der Titel</single></h1>
+				            <img src="img/ph/ph_264_198.png" alt="" title="" width="264" height="198" border="0" editable label="Image max width 264 pixel" />
+
+							<multi label="Body"><p>
+								 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+							</p></multi>
+						<div class="btn"><buttons>
+							<a href="#" editable label="Read More Button"><img src="img/btn/weiterlesen.png" width="145" height="40" alt="Weiterlesen" title="Weiterlesen" border="0" /></a>
+						</buttons></div>
+							</td>
+						</tr>
+						</table>
+					</td>
+		
+				</tr>
+				</table>
+			</td>
+			<td width="24" class="padd">&nbsp;</td>
+		</tr>
+		<tr><td height="12" colspan="3"></td></tr>
+		</table>
+
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+			<tr><td height="12" colspan="3"></td></tr>
+			<tr><td width="24" class="padd">&nbsp;</td>
+			<td align="center"><table width="100%" cellpadding="0" cellspacing="0" class="separator"><tr><td height="23">&nbsp;</td></tr></table></td>
+			<td width="24" class="padd">&nbsp;</td>
+			</tr>
+		</table>
+
+	</module>
+
+	<module label="2 Spalten ohne Bild" auto>
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+		<tr><td height="12" colspan="3"></td></tr>
+		<tr>
+			<td width="24" class="padd">&nbsp;</td>
+			<td valign="top" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0" class="o-fix">
+				<tr>
+		
+					<td valign="top" align="left">
+						<table width="264" cellpadding="0" cellspacing="0" class="m-b m-b-b" align="left">
+						<tr>
+							<td valign="top" align="left">
+							<h1><single label="Headline">Hier der Titel</single></h1>
+							<multi label="Body"><p>
+								 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+							</p></multi>
+						<div class="btn"><buttons>
+							<a href="#" editable label="Read More Button"><img src="img/btn/weiterlesen.png" width="145" height="40" alt="Weiterlesen" title="Weiterlesen" border="0" /></a>
+						</buttons></div>
+							</td>
+						</tr>
+						</table>
+						<table width="264" cellpadding="0" cellspacing="0" class="m-b" align="right">
+						<tr>
+							<td valign="top" align="left">
+							<h1><single label="Headline">Hier der Titel</single></h1>
+							<multi label="Body"><p>
+								 Li Europan lingu es es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam <a href="#">vocabular</a>. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+							</p></multi>
+						<div class="btn"><buttons>
+							<a href="#" editable label="Read More Button"><img src="img/btn/weiterlesen.png" width="145" height="40" alt="Weiterlesen" title="Weiterlesen" border="0" /></a>
+						</buttons></div>
+							</td>
+						</tr>
+						</table>
+					</td>
+		
+				</tr>
+				</table>
+			</td>
+			<td width="24" class="padd">&nbsp;</td>
+		</tr>
+		<tr><td height="12" colspan="3"></td></tr>
+		</table>
+
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap body">
+			<tr><td height="12" colspan="3"></td></tr>
+			<tr><td width="24" class="padd">&nbsp;</td>
+			<td align="center"><table width="100%" cellpadding="0" cellspacing="0" class="separator"><tr><td height="23">&nbsp;</td></tr></table></td>
+			<td width="24" class="padd">&nbsp;</td>
+			</tr>
+		</table>
+
+	</module>
+		
+    <module active label="footer">
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap footer">
+		<tr>
+			<td width="24" class="padd">&nbsp;</td>
+			<td valign="top" align="center">
+				<table width="100%" cellpadding="0" cellspacing="0" class="o-fix">
+				<tr>
+		
+					<td valign="top" align="left">
+						<table width="360" cellpadding="0" cellspacing="0" align="left">
+						<tr>
+							<td class="small m-b" align="left" valign="top">
+								<div><single label="CAN-SPAM">{can-spam}</single></div>
+								<div><single label="Copyright">{copyright}</single></div>
+							</td>
+						</tr>
+						</table>
+						<table width="168" cellpadding="0" cellspacing="0" align="right">
+						<tr>
+							<td class="small" align="right" valign="top">
+							<div class="btn">
+				
+								<a editable label="Social Media Button" href="https://facebook.com/akafoe"><img src="img/social/dark/facebook.png" alt="" title="" width="32" height="32" border="0" /></a>
+								<a editable label="Social Media Button" href="https://twitter.com/akafoe"><img src="img/social/dark/twitter.png" alt="" title="" width="32" height="32" border="0" /></a>
+							</div>
+							</td>
+						</tr>
+						</table>
+					</td>
+		
+				</tr>
+				</table>
+			</td>
+			<td width="24" class="padd">&nbsp;</td>
+		</tr>
+		<tr><td height="24" colspan="3"></td></tr>
+		</table>
+    </module>
+    
+</modules>
+        
+		<table cellpadding="0" cellspacing="0" class="wrap m-b-b">
+			<tr><td valign="top"><img src="img/shadow.png" class="m-100" width="600" height="25" alt="" border="0" /></td></tr>
+		</table>
+		
+		<table width="600" cellspacing="0" cellpadding="0" class="wrap">
+		<tr>
+			<td height="24" align="center" valign="middle">
+				<div class="small footer"><single label="preintro">{unsub}</single><a name="top"></a></div>
+			</td>
+		</tr>
+		</table>
+
+
+	
+	</td>
+</tr>
+</table>
+</body>
+</html>
