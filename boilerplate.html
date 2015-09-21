@@ -1,0 +1,233 @@
+<!--
+    Template Name: AKAFÖ
+    Template URI: http://newsletter.akafoe.de
+    Description: Basis-Layout für AKAFÖ-Newsletter</a>
+    Author: Dennis Fischer
+    Author URI: https://github.com/ichderfisch
+    Version: 1.0.1
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width"/>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="./bower_components/ink/css/ink.css"> <!-- For testing only -->
+
+        <style type="text/css">
+            
+            /* Ink styles go here in production */
+            
+        </style>
+        <style type="text/css">
+
+        html, body {
+            height: 100%;
+            font-family: "Montserrat", Arial, sans-serif;
+        }
+
+        .body {
+            background-color: red;
+        }
+
+        .header {
+            background-color: white;
+        }
+
+        td.social-media {
+            text-align: right;
+            vertical-align: center;
+
+        }
+
+        td.social-media img {
+            display: inline;
+            float: initial;
+            margin: 12px 0;
+            height: 32px;
+            width: 32px;
+        }
+
+        .content {
+            background-color: white;
+        }
+
+        body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+            font-family: "Montserrat", Arial, sans-serif;
+        }
+
+        .content h1 {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        .content h2 {
+            font-size: 26px;
+            line-height: 30px;
+            margin-bottom: 13px;
+        }
+
+        .content p.teaser {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .content p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+
+            /* Your custom styles go here */
+
+        </style>
+    </head>
+    <body>
+        <table class="body">
+            <tr>
+                <td class="center" align="center" valign="top">
+                    <center>
+                    
+                    <table class="header row">
+                        <tr>
+                            <td>
+                                <table class="container">
+                                    <tr>
+                                        <td class="wrapper">
+                                            <table class="four columns">
+                                                <tr>
+                                                    <td><img src="/img/logo.png"></td>
+                                                    <td class="expander"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="wrapper last">
+                                            <table class="eight columns">
+                                                <tr>
+                                                    <td align="right" class="social-media">
+                                                        <a href="https://facebook.com/akafoe"><img src="/img/social/dark/facebook.png" width="32px" height="32px"></a>
+                                                        <a href="https://twitter.com/akafoe"><img src="/img/social/dark/twitter.png" width="32px" height="32px"></a>
+                                                    </td>
+                                                    <td class="expander"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="content container">
+                        <tr>
+                            <td>
+                                <table class="intro row">
+                                    <tr>
+                                        <td><img src="/img/ph/ph_598.png" width="600px"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="wrapper">
+                                            <table class="twelve columns">
+                                                <tr>
+                                                    <td class="text-pad">        
+                                                        <h1>
+                                                            <single label="Titel">Lorem ipsum dolor sit amet consetetur!</single>
+                                                        </h1>
+                                                        <p class="teaser">
+                                                            <single label="Teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</single>
+                                                        </p>
+                                                    </td>
+                                                    <td class="expander"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <modules>
+
+                                    <module label="1 Spalte (Nur Text)">
+
+                                        <table class="row">
+                                            <tr>
+                                                <td class="wrapper">
+                                                    <table class="twelve columns">
+                                                        <tr>
+                                                            <td class="text-pad">
+                                                                <h2>
+                                                                    <single lable="Titel">Lorem ipsum dolor sit amet</single>
+                                                                </h2>
+                                                                <multi lable="Textkörper"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></multi>
+                                                            </td>
+                                                            <td class="expander"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        
+                                    </module>
+
+                                    <module label="2 Spalten (Nur Text)">
+
+                                    <table class="row">
+                                        <tr>
+                                            <td class="wrapper">
+                                                <table class="six columns">
+                                                    <td>
+                                                        <td class="text-pad">
+                                                            <h2><single lable="Titel">Lorem ipsum dolor sit amet</single></h2>
+                                                            <multi lable="Textkörper"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore quis nostrud.</p></multi>
+                                                        </td>
+                                                        <td class="expander"></td>
+                                                    </td>
+                                                </table>
+                                            </td>
+                                            <td class="wrapper last">
+                                                <table class="six columns">
+                                                    <td>
+                                                        <td class="text-pad">
+                                                            <h2><single lable="Titel">Lorem ipsum dolor sit amet</single></h2>
+                                                            <multi lable="Textkörper"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore quis nostrud.</p></multi>
+                                                        </td>
+                                                        <td class="expander"></td>
+                                                    </td>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </modules>
+
+
+
+
+                                <table class="row">
+                                    <tr>
+                                        <td class="wrapper">
+                                            <table class="twelve columns">
+                                                <tr>
+                                                    <td align="right" class="social-media">
+                                                        <a href="https://facebook.com/akafoe"><img src="/img/social/dark/facebook.png" width="32px" height="32px"></a>
+                                                        <a href="https://twitter.com/akafoe"><img src="/img/social/dark/twitter.png" width="32px" height="32px"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>   
+
+                    <!-- Email Content -->
+
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
